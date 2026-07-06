@@ -139,6 +139,73 @@
   .subject-list li { list-style: none; padding-left: 12px; position: relative; }
   .subject-list li::before { content: "›"; position: absolute; left: 0; color: #5A9EC0; }
 
+  /* ─── メール本文イメージ ─── */
+  .mail-preview {
+    margin-top: 24px;
+    border: 1px solid #DCEAF2;
+    background: #FAFCFE;
+  }
+  .mail-preview-label {
+    background: #EAF4FA;
+    padding: 8px 16px;
+    font-family: "Hiragino Sans", "Yu Gothic", sans-serif;
+    font-size: 10px; letter-spacing: 0.16em; color: #4A8CB0;
+    text-transform: uppercase;
+  }
+  .mail-preview-inner { padding: 28px 30px 30px; }
+  .mp-lead {
+    font-family: "Hiragino Mincho ProN", serif;
+    font-size: 14px; line-height: 2.1; color: #1E1A18; letter-spacing: 0.03em;
+  }
+  .mp-section { margin-top: 24px; }
+  .mp-section-title {
+    font-size: 14px; font-weight: 600; color: #1A3550;
+    border-left: 3px solid #C9A45C; padding-left: 10px;
+    letter-spacing: 0.05em; margin-bottom: 10px;
+  }
+  .mp-section-body {
+    font-family: "Hiragino Sans", "Yu Gothic", sans-serif;
+    font-size: 12.5px; line-height: 1.95; color: #5A5048; letter-spacing: 0.03em;
+  }
+  .mp-list { list-style: none; margin-top: 6px; }
+  .mp-list li {
+    font-family: "Hiragino Sans", "Yu Gothic", sans-serif;
+    font-size: 12.5px; line-height: 2; color: #4A403C;
+    padding-left: 20px; position: relative;
+  }
+  .mp-list li::before {
+    content: "✓"; position: absolute; left: 0; color: #C9A45C; font-weight: 600;
+  }
+  .mp-img { display: block; width: 100%; max-width: 400px; margin: 20px auto 4px; box-shadow: 0 1px 12px rgba(30,60,90,0.10); }
+  .mp-img-caption {
+    text-align: center; margin-top: 8px;
+    font-family: "Hiragino Sans", "Yu Gothic", sans-serif;
+    font-size: 10px; color: #9AA8B0; letter-spacing: 0.06em;
+  }
+  .mp-faq {
+    margin-top: 22px; padding: 14px 18px;
+    background: #EFF7FB; border-left: 3px solid #5A9EC0;
+  }
+  .mp-faq dt {
+    font-family: "Hiragino Sans", "Yu Gothic", sans-serif;
+    font-size: 12px; font-weight: 600; color: #1A3550; margin-bottom: 4px;
+  }
+  .mp-faq dd {
+    font-family: "Hiragino Sans", "Yu Gothic", sans-serif;
+    font-size: 12px; line-height: 1.9; color: #5A5048;
+  }
+  .mp-cta {
+    display: block; width: fit-content; margin: 26px auto 0;
+    padding: 12px 36px; background: #4A9DC4; color: #fff;
+    font-family: "Hiragino Sans", "Yu Gothic", sans-serif;
+    font-size: 12.5px; letter-spacing: 0.1em; text-decoration: none;
+  }
+  .mp-closing {
+    margin-top: 22px; text-align: center;
+    font-family: "Hiragino Mincho ProN", serif;
+    font-size: 13px; line-height: 2; color: #1A3550; letter-spacing: 0.04em;
+  }
+
   .flow-bar {
     max-width: 720px;
     margin: 0 auto 40px;
@@ -222,6 +289,38 @@
           <li>「【使い方のコツ】ドクターピール発想の角質ケアを、より心地よく」</li>
           <li>「はじめの1週間で意識したい、3つのポイント」</li>
         </div>
+
+        <div class="mail-preview">
+          <div class="mail-preview-label">Mail Body — 本文イメージ</div>
+          <div class="mail-preview-inner">
+            <p class="mp-lead">こんにちは、E-SPECIALです。<br>スキンクリアセラムをお手にとっていただき、ありがとうございます。<br>お使いはじめて、そろそろ1週間。毎晩のケアには慣れてきましたか？</p>
+
+            <div class="mp-section">
+              <div class="mp-section-title">はじめの1週間は、肌と"ならす"時間</div>
+              <div class="mp-section-body">新しいスキンケアは、少しずつ肌になじませていくことが大切です。1日お休みしてしまっても大丈夫。気づいた日から、また続けていただければ十分です。</div>
+            </div>
+
+            <img class="mp-img" src="./merumaga_09_step.png?v=20260706b" alt="毎晩のケアに取り入れる3ステップ">
+            <div class="mp-img-caption">▲ 本文内 図解イメージ（使い方3ステップ）</div>
+
+            <div class="mp-section">
+              <div class="mp-section-title">使い方の3つのコツ</div>
+              <ul class="mp-list">
+                <li>洗顔後すぐ、清潔な肌に使う</li>
+                <li>1〜2プッシュを、こすらずやさしくなじませる</li>
+                <li>仕上げの保湿までがワンセット</li>
+              </ul>
+            </div>
+
+            <dl class="mp-faq">
+              <dt>Q. 毎晩使ってもいいの？</dt>
+              <dd>A. 毎晩お使いいただけるマイルド設計です。肌の調子に合わせて頻度を調整してください。万が一肌に合わない場合は、使用をお控えください。</dd>
+            </dl>
+
+            <a class="mp-cta" href="#">くわしい使い方を見る →</a>
+          </div>
+        </div>
+
         <div class="keymessage">毎晩の習慣にすることが、角質ケアのいちばんの近道です。</div>
         <div class="mail-meta">
           <div class="mail-meta-item">CTA <strong>くわしい使い方を見る</strong></div>
@@ -247,6 +346,34 @@
           <li>「"毎晩のドクターピール発想"が、まいにちに寄り添う理由」</li>
           <li>「くすみ・毛穴・ゴワつきが気になる夏に、続けたい角質ケア」</li>
         </div>
+
+        <div class="mail-preview">
+          <div class="mail-preview-label">Mail Body — 本文イメージ</div>
+          <div class="mail-preview-inner">
+            <p class="mp-lead">スキンクリアセラムを続けていただいて、2週間ほど。<br>今日は、私たちがこの1本に込めた"処方の思い"を、少しだけお話しさせてください。</p>
+
+            <div class="mp-section">
+              <div class="mp-section-title">「ピーリングは刺激が強そう」を、変えたかった</div>
+              <div class="mp-section-body">角質ケアを、特別なケアではなく毎晩の習慣にしてほしい。だから選んだのは、サトウキビ・オレンジ・レモンなど植物エキス由来のAHA（整肌成分）。マイルドさにこだわった、毎晩使える設計です。</div>
+            </div>
+
+            <img class="mp-img" src="./merumaga_04_seibun.png?v=20260706" alt="Dr.ERI監修 3つの成分">
+            <div class="mp-img-caption">▲ 本文内 図解イメージ（3つの成分）</div>
+
+            <div class="mp-section">
+              <div class="mp-section-title">角質ケアとうるおいを、1本で</div>
+              <div class="mp-section-body">13種のオリゴペプチド（保湿成分）とヒアルロン酸Na（保湿成分）を配合。角質ケアのあとの肌に、うるおいを与えます。</div>
+            </div>
+
+            <div class="mp-section">
+              <div class="mp-section-title">衣理クリニック院長 Dr.ERI監修</div>
+              <div class="mp-section-body">デリケートな目元まわりにも使える、肌へのやさしさを追求しました。毎晩の積み重ねが、すこやかな素肌づくりにつながります。</div>
+            </div>
+
+            <a class="mp-cta" href="#">処方のこだわりを見る →</a>
+          </div>
+        </div>
+
         <div class="keymessage">肌のコンディションは、毎日のていねいな積み重ねから。</div>
         <div class="mail-meta">
           <div class="mail-meta-item">CTA <strong>処方のこだわりを見る</strong></div>
@@ -272,6 +399,31 @@
           <li>「【続けたい方へ】お得に続けられるご案内」</li>
           <li>「肌のリズムを止めないための、次のステップ」</li>
         </div>
+
+        <div class="mail-preview">
+          <div class="mail-preview-label">Mail Body — 本文イメージ</div>
+          <div class="mail-preview-inner">
+            <p class="mp-lead">スキンクリアセラムをはじめて、まもなく1ヶ月。<br>そろそろ、ボトルの残量が気になってくるころではないでしょうか。</p>
+
+            <div class="mp-section">
+              <div class="mp-section-title">毎晩の積み重ねを、止めないために</div>
+              <div class="mp-section-body">肌のコンディションは、日々のケアの積み重ねから。ケアを切らさず続けることが、すこやかな肌を保ついちばんの近道です。</div>
+            </div>
+
+            <div class="mp-section">
+              <div class="mp-section-title">続けたい方への、ご案内</div>
+              <div class="mp-section-body">使い切る前に次の1本をご準備いただくと、毎晩のケアを途切れさせずに続けられます。最新のキャンペーン詳細は、公式サイトにてご案内しております。</div>
+            </div>
+
+            <img class="mp-img" src="./merumaga_05_cta.png?v=20260706b" alt="累計10万本突破 7月の角質ケアを始める">
+            <div class="mp-img-caption">▲ 本文内 CTAバナーイメージ（累計10万本突破）</div>
+
+            <div class="mp-closing">続けることを、もっと心地よく。<br>E-SPECIALは、あなたの毎晩に寄り添います。</div>
+
+            <a class="mp-cta" href="#">次の1本を選ぶ →</a>
+          </div>
+        </div>
+
         <div class="keymessage">続けることを、もっと心地よく。切らさない毎日へ。</div>
         <div class="mail-meta">
           <div class="mail-meta-item">CTA <strong>次の1本を選ぶ</strong></div>
